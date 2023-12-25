@@ -1,0 +1,149 @@
+.stay-safe {
+    padding: 79px 0;
+
+    &__container {
+        display: flex;
+        align-items: center;
+        padding: 0 15px;
+    }
+
+    &__img {
+        display: flex;
+        flex: 0 1 calc(386px / 1057px * 100%); // 34%
+        justify-content: flex-end;
+    }
+
+    &__block-text {
+        flex: 0 1 64%;
+
+        .text-block {
+            max-width: 379px;
+            margin: 0 0 0 149px;
+        }
+    }
+}
+
+
+
+.img-container {
+    flex: 0 1 calc(339px / 386px * 100%);
+    height: 100%;
+    position: relative;
+    padding: 56px 38px 26px 72px;
+
+
+    img {
+        position: relative;
+        z-index: 4;
+        border-radius: 16px;
+        box-shadow: 2px 4px 32px 0px rgba(0, 0, 0, 0.12);
+    }
+
+    &__item {
+        position: absolute;
+        width: 77px;
+        height: 77px;
+        border-radius: 30px;
+        background: #EC5863;
+
+        &_1 {
+            top: 0;
+            left: 0;
+            width: 147px;
+            height: 147px;
+        }
+
+        &_2 {
+            bottom: 0;
+            left: 33px;
+        }
+
+        &_3 {
+            bottom: 107px;
+            right: 0px;
+        }
+
+        &_4 {
+            width: 206px;
+            height: 27px;
+            border-radius: 16px;
+            background: rgba(240, 240, 240, 0.49);
+            bottom: 15px;
+            left: 84px;
+        }
+
+
+        &__block-text {
+            flex: 0 1 63.5%;
+            padding: 0 0 0 149px;
+        }
+    }
+}
+
+// Адаптив
+
+//PC
+@media (max-width: 1087px) {
+    div[class*="__container"] {
+        max-width: 970px;
+    }
+
+}
+
+// TABLET
+@media (max-width: 991.98px) {
+    div[class*="__container"] {
+        max-width: 750px;
+    }
+
+    .stay-safe {
+        padding: 79px 0;
+    
+        &__block-text {    
+            .text-block {
+                margin: 0 0 0 70px;
+            }
+        }
+    }
+
+
+
+}
+
+//MOBILE
+@media (max-width: 767.98px) {
+    div[class*="__container"] {
+        max-width: none;
+    }
+
+    .stay-safe {
+        padding: 40px 0;
+        &__container {
+            flex-direction: column-reverse;
+        }
+
+        &__img {
+            margin: 50px 0 0 0;
+        }
+
+        .text-block {
+            margin: 0;
+        }
+    }
+
+    .img-container {
+        padding: 56px 38px 26px 32px;
+        &__item_2 {
+            left: 0;
+        }
+        &__item_4 {
+            left: 42px;
+        }
+    }
+    
+
+    
+}
+
+//MOBILE SMALL
+@media (max-width: 479.98px) {}

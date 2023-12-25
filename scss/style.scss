@@ -1,0 +1,51 @@
+// Шрифты
+@import url(https://fonts.googleapis.com/css?family=Rubik:regular,700&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Raleway:,700,800&display=swap);
+
+// Подключение файлов
+@import '_nullstyle';
+@import '_BEM';
+@import '_header';
+@import '_get-started';
+@import '_stay-safe';
+@import '_statistik';
+@import '_healthcare';
+@import '_footer';
+
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    
+}
+
+div[class*="__container"] {
+    max-width: 1057px;
+    margin: 0 auto;
+    
+}
+
+.wrapper {
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    color: #616161;
+    font-variant-numeric: lining-nums proportional-nums;
+    font-family: Rubik;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 138.5%;
+    /* 16.62px */
+    letter-spacing: 0.96px;
+    overflow: hidden;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+.hidden {
+    overflow: hidden;
+}

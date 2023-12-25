@@ -1,0 +1,249 @@
+.experts {
+    background-color: #FAFBFD;
+    padding: 103px 0 116px 0;
+
+    &__container {
+        display: flex;
+        padding: 0 15px;
+        flex-wrap: wrap;
+    }
+
+    &__statistik {
+        display: flex;
+        flex: 0 0 100%;
+        justify-content: center;
+    }
+
+    &__statistik-body {
+        display: inline-flex;
+        position: relative;
+    }
+
+    &__decor {
+        border-radius: 30px;
+        background: #EC5863;
+        position: absolute;
+        z-index: 1;
+
+        &_1 {
+            width: 65.752px;
+            height: 65.752px;
+            left: -20px;
+            bottom: -20px;
+            border-radius: 16px;
+            transform: rotate(-30deg);
+        }
+
+        &_2 {
+            top: -35px;
+            left: 220px;
+            width: 96.956px;
+            height: 96.956px;
+            transform: rotate(105deg);
+        }
+
+        &_3 {
+            right: -62px;
+            bottom: -8px;
+            width: 127.467px;
+            height: 127.467px;
+            transform: rotate(-30deg);
+        }
+    }
+
+    &__video-text {
+        flex: 0 1 100%;
+        margin-top: 79px;
+        padding: 0 13px 0 25px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__block-text {
+        display: inline-flex;
+        max-width: 363px;
+    }
+
+    &__video-body {
+
+        img {
+            max-width: 100%;
+        }
+    }
+
+    &__video-cover {
+        cursor: pointer;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            filter: drop-shadow(0px 8px 8px rgba(0, 0, 0, 0.5));
+
+        }
+
+    }
+
+    &__video {
+        display: none;
+        width: 100%;
+        height: 100%;
+        min-width: 522px;
+        min-height: 284px;
+
+    }
+}
+
+.statistik-block {
+    width: 654px;
+    min-height: 117px;
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 2px 24px 0px rgba(88, 126, 236, 0.15);
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    &__item {}
+}
+
+.statistik-item {
+
+
+    &__title {
+        color: #EC5863;
+        text-align: center;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Rubik;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 5.04px;
+    }
+
+    &__text {
+        color: #000;
+        text-align: center;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Rubik;
+        font-size: 11px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        letter-spacing: 4.07px;
+        text-transform: uppercase;
+    }
+}
+
+// Адаптив
+
+//PC
+@media (max-width: 1087px) {
+    div[class*="__container"] {
+        max-width: 970px;
+    }
+
+}
+
+// TABLET
+@media (max-width: 991.98px) {
+    div[class*="__container"] {
+        max-width: 750px;
+    }
+
+    .experts {
+        padding: 65px 0 80px 0;
+
+        &__video-text {
+            flex-direction: column;
+
+        }
+
+        &__video-body {
+            margin-top: 50px;
+
+        }
+    }
+
+}
+
+//MOBILE
+@media (max-width: 767.98px) {
+    div[class*="__container"] {
+        max-width: none;
+    }
+
+    .experts {
+        &__statistik-body {
+            max-width: 420px;
+        }
+
+        &__decor {
+            display: none;
+        }
+        &__video {
+           
+            min-width: 400px;
+            min-height: 240px;
+            
+        }
+    }
+
+    .statistik-block {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .statistik-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+
+
+}
+
+//MOBILE SMALL
+@media (max-width: 479.98px) {
+    .experts {
+        padding: 45px 0 60px 0;
+
+        &__statistik-body {
+            max-width: 280px;
+        }
+
+        &__video-text {
+            margin-top: 40px;
+        }
+
+        &__video-body {
+           
+        }
+        &__video {
+            width: 100%;
+            height: 100%;
+            min-width: 200px;
+            min-height: 160px;
+            
+        }
+    }
+
+    .statistik-block {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+
+    .statistik-item:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    .statistik-item {
+        &__title {
+            font-size: 28px;
+        }
+    }
+
+
+}

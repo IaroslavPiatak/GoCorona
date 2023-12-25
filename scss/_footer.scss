@@ -1,0 +1,45 @@
+.footer {
+
+    &__container {
+        padding: 0 15px 47px 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__android {
+        margin: 0 57px 0 0;
+   
+    }
+
+    &__apple {
+     
+    }
+}
+
+// Адаптив
+
+//MOBILE SMALL
+@media (max-width: 479.98px) {
+   
+    .footer {
+        &__container {
+            padding: 0 15px 47px 15px;
+            display: flex;
+            flex-direction: column;
+        }
+        &__android {
+            margin: 0 0 20px 0;
+        }
+        &__aplle {
+            
+        }
+           
+        
+         
+
+
+    }
+  
+
+}

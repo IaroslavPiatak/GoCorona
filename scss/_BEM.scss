@@ -1,0 +1,78 @@
+.btn {
+    width: 130px;
+    height: 40px;
+    border-radius: 5px;
+    background: #EC5863;
+    color: #FCFDFE;
+    font-family: Raleway;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+    letter-spacing: 1.4px;
+    text-transform: uppercase;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    &:hover {
+        background: #cf5b63;
+    }
+
+    &_blue {
+        background-color: #4285F4;
+
+        &:hover {
+            background-color: #5586d4;
+        }
+    }
+
+}
+
+.text-block {
+
+    &__title {
+        color: #000;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Rubik;
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 126%;
+        /* 55.44px */
+        &_blue {
+            color: #4285F4;
+        }
+        &_red {
+            color: #EC5863;
+        }
+        &:not(:last-child)
+        {
+            margin: 0 0 12px 0;
+        }
+    }
+
+    &__text {
+        color: #616161;
+        font-variant-numeric: lining-nums proportional-nums;
+        font-family: Rubik;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 138.5%;
+        /* 16.62px */
+        letter-spacing: 0.96px;
+        &:not(:last-child)
+        {
+            margin: 0 0 24px 0;
+        }
+    }
+}
+
+
+.text-blcok {
+
+    &__button {}
+}
